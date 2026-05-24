@@ -1,0 +1,37 @@
+[project]
+name = "hf-ml-platform-scifact-rag"
+version = "0.1.0"
+description = "RAG training pipeline on top of the SciFact dataset using open-source HuggingFace models"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "langchain-core>=0.3.0",
+    "langchain>=0.3.0",
+    "langchain-classic>=1.0.0",
+    "langchain-openai>=0.2.0",
+    "httpx>=0.27.0",
+    "pydantic>=2.9.0",
+    "polars>=1.10.0",
+    "datasets>=3.0.0",
+    "sentence-transformers>=3.2.0",
+    "numpy>=1.26.0",
+    "tqdm>=4.66.0",
+    "scikit-learn>=1.5.0",
+    "matplotlib>=3.9.0",
+    "bitsandbytes>=0.44.0",
+    "accelerate>=1.0.0",
+    "chromadb>=0.5.0",
+    "vllm>=0.10.0",
+    "ranx>=0.3.20",
+    "tabulate>=0.9.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[dependency-groups]
+dev = [
+    "tox>=4.0.0",
+    "ruff>=0.9.0",
+]

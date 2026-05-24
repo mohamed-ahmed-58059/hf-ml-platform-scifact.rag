@@ -216,3 +216,16 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ── Project artifacts (generated; do not commit) ──
+# Vector index (Chroma) — rebuilt by the baseline_dense build chain
+chroma_data/
+# Per-stage resumable checkpoints
+cache/
+# Generated eval set + experiment outputs
+eval_qrels.jsonl
+eval_generated.jsonl
+experiments_results.jsonl
+experiments_results.csv
+# Visualization output
+tsne.png
